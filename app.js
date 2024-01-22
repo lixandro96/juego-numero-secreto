@@ -1,7 +1,7 @@
 
 let numeroSecreto ;
 let intentos ;
-let numeroMaximo = 10;
+let numeroMaximo = 20;
 let botonIntentar = document.querySelector('#intentar');
 let botonReiniciar = document.querySelector('#reiniciar');
 let listaNumerosSorteados = [];
