@@ -26,8 +26,7 @@ function asignaTextoElemento(elemento,texto,clase = null) {
 // funcion que genera un numero aleatorio
 function generarNumeroSecreto() {
   let numeroGenerado = Math.floor( Math.random() * numeroMaximo) + 1;
-  console.log(numeroGenerado);
-  console.log(listaNumerosSorteados);
+
   if(listaNumerosSorteados.length == numeroMaximo){
     asignaTextoElemento('.texto__parrafo',`Haz finalizado el juego!`,'success');
     botonIntentar.classList.add('noClick')
@@ -66,7 +65,6 @@ function verificarIntento() {
         asignaTextoElemento('.texto__parrafo',`El numero secreto es menor que ${numeroUsuario}`);
       }
       intentos++
-      console.log(intentos)
     }
   }
   limparCaja()
